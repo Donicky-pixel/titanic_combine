@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: "0000"
       MYSQL_DATABASE: titanic
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
       - ./db/init:/docker-entrypoint-initdb.d:ro
@@ -28,4 +28,5 @@ services:
 
 volumes:
   mysql_data:
+
 
